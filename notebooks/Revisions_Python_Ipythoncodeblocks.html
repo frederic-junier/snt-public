@@ -12642,6 +12642,10 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
+<li><p>On importe d'abord le constructeur <code>BlockGrid</code> de la  bibliothèque  avec :</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ipythonblocks</span> <span class="kn">import</span> <span class="n">BlockGrid</span>
+</pre></div>
+</li>
 <li><p>L'objet de base est une grille (ou bloc) constituée de $n \times m$ cases disposées en $n$ lignes et $m$ colonnes.</p>
 </li>
 <li><p>Pour créer une grille de $10$ colonnes et $5$ colonnes dont toutes les cases sont rouges , on écrit :</p>
@@ -12703,10 +12707,11 @@ ou encore :<div class="highlight"><pre><span></span><span class="n">grid</span><
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[106]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#création d&#39;une grille</span>
+<span class="kn">from</span> <span class="nn">ipythonblocks</span> <span class="k">import</span> <span class="n">BlockGrid</span>
 <span class="n">grid</span> <span class="o">=</span> <span class="n">BlockGrid</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 </pre></div>
 
@@ -13246,10 +13251,11 @@ ou encore :<div class="highlight"><pre><span></span><span class="n">grid</span><
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Exercice 1 question 1</span>
+<span class="kn">from</span> <span class="nn">ipythonblocks</span> <span class="k">import</span> <span class="n">BlockGrid</span>
 <span class="n">grid</span> <span class="o">=</span> <span class="n">BlockGrid</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span>  <span class="n">fill</span><span class="o">=</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span> <span class="n">block_size</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
 <span class="s2">&quot;à compléter&quot;</span>
 <span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>  <span class="c1">#(0,255,0) =&gt; vert</span>
@@ -13269,12 +13275,12 @@ ou encore :<div class="highlight"><pre><span></span><span class="n">grid</span><
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[98]:</div>
+<div class="prompt output_prompt">Out[107]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<style type="text/css">table.blockgrid {border: none;} .blockgrid tr {border: none;} .blockgrid td {padding: 0px;} #blocksbe285d40-e6c3-44b5-a2ee-81cdde228991 td {border: 1px solid white;}</style><table id="blocksbe285d40-e6c3-44b5-a2ee-81cdde228991" class="blockgrid"><tbody><tr><td title="Index: [0, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [0, 1]&#10;Color: (0, 255, 0)" style="width: 50px; height: 50px;background-color: rgb(0, 255, 0);"></td><td title="Index: [0, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr><tr><td title="Index: [1, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [1, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [1, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr><tr><td title="Index: [2, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [2, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [2, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr></tbody></table>
+<style type="text/css">table.blockgrid {border: none;} .blockgrid tr {border: none;} .blockgrid td {padding: 0px;} #blocks5f0d8d7a-0ca7-4dda-ba85-e7cc05d47f75 td {border: 1px solid white;}</style><table id="blocks5f0d8d7a-0ca7-4dda-ba85-e7cc05d47f75" class="blockgrid"><tbody><tr><td title="Index: [0, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [0, 1]&#10;Color: (0, 255, 0)" style="width: 50px; height: 50px;background-color: rgb(0, 255, 0);"></td><td title="Index: [0, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr><tr><td title="Index: [1, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [1, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [1, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr><tr><td title="Index: [2, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [2, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [2, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr></tbody></table>
 </div>
 
 </div>
@@ -13295,11 +13301,12 @@ ou encore :<div class="highlight"><pre><span></span><span class="n">grid</span><
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Exercice 1 question 2</span>
-<span class="c1">#Exercice 1 question 1</span>
+<span class="kn">from</span> <span class="nn">ipythonblocks</span> <span class="k">import</span> <span class="n">BlockGrid</span>
+
 <span class="n">grid</span> <span class="o">=</span> <span class="n">BlockGrid</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span>  <span class="n">fill</span><span class="o">=</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span> <span class="n">block_size</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
 <span class="n">grid</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>  <span class="c1">#(0,255,0) =&gt; vert</span>
 <span class="s2">&quot;à compléter&quot;</span>
@@ -13316,12 +13323,12 @@ ou encore :<div class="highlight"><pre><span></span><span class="n">grid</span><
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[99]:</div>
+<div class="prompt output_prompt">Out[109]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<style type="text/css">table.blockgrid {border: none;} .blockgrid tr {border: none;} .blockgrid td {padding: 0px;} #blocks86c46e36-5432-4d42-b562-5e012de8cd94 td {border: 1px solid white;}</style><table id="blocks86c46e36-5432-4d42-b562-5e012de8cd94" class="blockgrid"><tbody><tr><td title="Index: [0, 0]&#10;Color: (0, 255, 0)" style="width: 50px; height: 50px;background-color: rgb(0, 255, 0);"></td><td title="Index: [0, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [0, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr><tr><td title="Index: [1, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [1, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [1, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr><tr><td title="Index: [2, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [2, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [2, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr></tbody></table>
+<style type="text/css">table.blockgrid {border: none;} .blockgrid tr {border: none;} .blockgrid td {padding: 0px;} #blocks619c9af0-7158-4740-b6e2-7bf3bb628059 td {border: 1px solid white;}</style><table id="blocks619c9af0-7158-4740-b6e2-7bf3bb628059" class="blockgrid"><tbody><tr><td title="Index: [0, 0]&#10;Color: (0, 255, 0)" style="width: 50px; height: 50px;background-color: rgb(0, 255, 0);"></td><td title="Index: [0, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [0, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr><tr><td title="Index: [1, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [1, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [1, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr><tr><td title="Index: [2, 0]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [2, 1]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td><td title="Index: [2, 2]&#10;Color: (255, 128, 128)" style="width: 50px; height: 50px;background-color: rgb(255, 128, 128);"></td></tr></tbody></table>
 </div>
 
 </div>
